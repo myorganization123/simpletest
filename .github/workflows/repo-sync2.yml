@@ -1,6 +1,6 @@
 name: Force sync master from apache/airflow
 on:
-  push:
+  workflow_dispatch:
 jobs:
   repo-sync:
     if: github.repository != 'apache/airflow'
